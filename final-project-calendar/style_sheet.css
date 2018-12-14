@@ -1,0 +1,73 @@
+.dec{
+    text-align: center;
+    font-size: 40pt;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days li {
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 26pt;
+    color: purple;
+}
+
+.days {
+    padding: 3px;
+}
+
+#dates :hover{
+    background-color: silver;
+}
+
+div{
+    background-color: blanchedalmond;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hidden{
+    display: none;
+}
+
+.dates{
+    font-size: 18pt;
+}
+
+#rikimaru{
+    float: right;
+}
+
+#reservation-info{
+    float: left;
+    border: 5px black;
+    font-size: 20px;
+    border-style: dashed;
+    
+}
+
+/* #confirmation-info{
+    
+} */
+
+.noHover{
+    pointer-events: none;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+/* p {
+    border-style: dashed;
+} */
+
+#reservation{
+    border-style: groove;
+}

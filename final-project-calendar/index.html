@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Interactive Calendar Final Project</title>
+
+
+    <link href="style_sheet.css" type="text/css" rel="stylesheet">
+    <script src="jquery-3.3.1.min.js" type="application/javascript"></script>
+</head>
+<body>
+    
+
+
+<div class="dec">
+    DECEMBER
+</div>
+
+<div id="date-reserved">
+    Date of Reservation:
+</div>
+
+<form id="reservation" class="hidden">    
+    <div>
+        <label for="full-name"> Full Name</label>
+        <input type="text" placeholder="Enter Name Please" id="full-name" name="Confirmed Name: "/>
+    </div>
+    <div>
+        <label for="party-size">Number of Guests</label>
+        <select name="Confirmed Party Size: " id="guests">
+            <option value="" disabled="disabled" selected="selected">Select Number of Guests</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+            <option value="11+">11+ Please Call 215-767-7676 To Book</option>
+        </select>
+    </div>
+    <div>
+        <label for="time">Reservation Time</label>
+        <select name="Reserved Time: " id="reserved-time">
+            <option value="" disabled="disabled" selected="selected">Select Reservation Time</option>
+            <option value="3pm">3pm</option>
+            <option value="4pm">4pm</option>
+            <option value="5pm">5pm</option>
+            <option value="6pm">6pm</option>
+            <option value="7pm">7pm</option>
+            <option value="8pm">8pm</option>
+            <option value="9pm">9pm</option>
+            <option value="10pm">10pm</option>
+            <option value="11pm">11pm</option>
+        </select>
+    </div>
+    <div>
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" id="phone-number" name="Phone #: ">
+    </div>
+    <div>
+        <label for="additionalRequests">Additional Requests</label>
+        <input type="text" placeholder="" id="addl-Requests" name="Requests: ">
+    </div>
+    <div>
+        <input type="submit" value="Confirm Reservation" name="Sent Text to "/>
+    </div>
+</form>
+
+<div class="weekdays">
+    <li>Sunday</li>
+    <li>Monday</li>
+    <li>Tuesday</li>
+    <li>Wednesday</li>
+    <li>Thursday</li>
+    <li>Friday</li>
+    <li>Saturday</li>
+</div>
+
+<div class="days" id="dates">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li id="Date of Reservation: 12/1/2018">1</li>
+    <li id="Date of Reservation: 12/2/2018">2</li>
+    <li id="Date of Reservation: 12/3/2018">3</li>
+    <li id="Date of Reservation: 12/4/2018">4</li>
+    <li id="Date of Reservation: 12/5/2018">5</li>
+    <li id="Date of Reservation: 12/6/2018">6</li>
+    <li id="Date of Reservation: 12/7/2018">7</li>
+    <li id="Date of Reservation: 12/8/2018">8</li>
+    <li id="Date of Reservation: 12/9/2018">9</li>
+    <li id="Date of Reservation: 12/10/2018">10</li>
+    <li id="Date of Reservation: 12/11/2018">11</li>
+    <li id="Date of Reservation: 12/12/2018">12</li>
+    <li id="Date of Reservation: 12/13/2018">13</li>
+    <li id="Date of Reservation: 12/14/2018">14</li>
+    <li id="Date of Reservation: 12/15/2018">15</li>
+    <li id="Date of Reservation: 12/16/2018">16</li>
+    <li id="Date of Reservation: 12/17/2018">17</li>
+    <li id="Date of Reservation: 12/18/2018">18</li>
+    <li id="Date of Reservation: 12/19/2018">19</li>
+    <li id="Date of Reservation: 12/20/2018">20</li>
+    <li id="Date of Reservation: 12/21/2018">21</li>
+    <li id="Date of Reservation: 12/22/2018">22</li>
+    <li id="Date of Reservation: 12/23/2018">23</li>
+    <li class="holidayOff noHover" id="xmasEve">24</li>
+    <li class="holidayOff noHover" id="christmas">25</li>
+    <li class="holidayOff noHover" id="kwanzaa">26</li>
+    <li id="Date of Reservation: 12/27/2018">27</li>
+    <li id="Date of Reservation: 12/28/2018">28</li>
+    <li id="Date of Reservation: 12/29/2018">29</li>
+    <li id="Date of Reservation: 12/30/2018">30</li>
+    <li id="Date of Reservation: 12/31/2018">31</li>
+</div>
+
+<h1>
+    <img src="rikimaru_ramen.png" alt="picture of resturant" id="rikimaru">
+</h1>
+
+<p id="reservation-info">
+</p>
+
+    <script src="javascript_calander.js"> </script>
+   
+  </body>
+</html>
